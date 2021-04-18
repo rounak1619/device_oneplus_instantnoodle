@@ -23,6 +23,13 @@ $(call inherit-product, device/oneplus/instantnoodle/device.mk)
 
 # Inherit some common Fluid stuff.
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+#TARGET_INCLUDE_GAPPS := true
+#TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_MINIMAL_GAPPS := false
+TARGET_INCLUDE_AOSP_REPLACEMENTS := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
